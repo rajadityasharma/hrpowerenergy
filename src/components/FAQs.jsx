@@ -1,14 +1,16 @@
 import "./pages.css";
 
+
+import FaqHero from "./FaqHero";
+import FAQSection from "./FAQSection";
+import ContactCards from "./ContactCards";
+
 function FAQs() {
   return (
     <div className="page section">
-      <h1>FAQs</h1>
-      <ul>
-        <li>What services do you offer?</li>
-        <li>How can I contact support?</li>
-        <li>Do you provide maintenance?</li>
-      </ul>
+      <FaqHero />
+      <FAQSection />
+      <ContactCards />
     </div>
   );
 }

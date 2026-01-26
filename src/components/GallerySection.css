@@ -1,0 +1,107 @@
+.gallery-section {
+  padding: 80px 8%;
+  background: #f9fafc;
+  text-align: center;
+}
+
+.gallery-heading {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.gallery-sub {
+  max-width: 600px;
+  margin: auto;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* RANDOM MASONRY GRID */
+.gallery-grid {
+  column-count: 4;
+  column-gap: 15px;
+}
+
+.gallery-item {
+  margin-bottom: 15px;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  border-radius: 14px;
+}
+
+/* HOVER EFFECT */
+.gallery-item:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* MODAL */
+.gallery-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: fadeIn 0.3s ease;
+}
+
+.gallery-modal img {
+  max-width: 85%;
+  max-height: 85%;
+  border-radius: 16px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.15);
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  font-size: 42px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.close-btn:hover {
+  transform: rotate(90deg) scale(1.2);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .gallery-grid {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    column-count: 1;
+  }
+}

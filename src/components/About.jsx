@@ -1,5 +1,6 @@
 import "./pages.css";
 
+import AboutHero from "./AboutHero";
 import AboutSection from "./AboutSection";
 import MissionVision from "./MissionVision";
 import DirectorMessage from "./DirectorMessage";
@@ -10,6 +11,7 @@ import ContactCards from "./ContactCards";
 function About() {
   return (
     <div className="page section">
+      <AboutHero />
       <AboutSection />
       <MissionVision />
       <DirectorMessage />

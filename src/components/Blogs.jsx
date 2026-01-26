@@ -1,11 +1,15 @@
 import "./pages.css";
 
+
+import BlogHero from "./BlogHero";
+import GallerySection from "./GallerySection";
+import ContactCards from "./ContactCards";
 function ContactUs() {
   return (
     <div className="page section contact-info">
-      <h1>Contact Us</h1>
-      <p>Email: hrpowerenergy@gmail.com</p>
-      <p>Phone: +91 9XXXXXXXXX</p>
+      <BlogHero />
+      <GallerySection />
+      <ContactCards />
     </div>
   );
 }

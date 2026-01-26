@@ -65,6 +65,7 @@ function CustomerReviews() {
 
   return (
     <section className="review-section">
+      <h2 className="review-heading">Customer Review </h2>
       <div className="review-layout">
 
         {/* LEFT BUTTONS */}

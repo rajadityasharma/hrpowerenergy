@@ -49,6 +49,7 @@
   display: none;
   flex-direction: column;
   cursor: pointer;
+  padding: 1.2rem;
 }
 
 .burger span {

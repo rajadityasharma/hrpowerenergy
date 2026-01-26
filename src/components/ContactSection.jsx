@@ -66,8 +66,7 @@ Message: ${formData.message}`;
       <div className="contact-container">
 
         <div className="contact-header">
-          <h2>Contact Us</h2>
-          <p>Let’s discuss your solar energy requirements</p>
+          <h2>Let’s discuss your solar energy requirements</h2>
         </div>
 
         <div className="contact-grid">
