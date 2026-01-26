@@ -1,0 +1,79 @@
+/* SECTION HEADING */
+.why-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.why-heading h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.why-heading p {
+  font-size: 16px;
+  color: #64748b;
+  max-width: 650px;
+  margin: auto;
+}
+
+.why-solar {
+  padding: 80px 20px;
+  background:
+    radial-gradient(circle at top left, #d1fae5 0%, transparent 40%),
+    radial-gradient(circle at bottom right, #bae6fd 0%, transparent 40%),
+    #f8fafc;
+}
+
+
+.why-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.solar-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 35px 20px;
+  text-align: center;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solar-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* ICON */
+.solar-card img {
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+/* TEXT */
+.solar-card h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #334155;
+  line-height: 1.4;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .why-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .why-container {
+    grid-template-columns: 1fr;
+  }
+}

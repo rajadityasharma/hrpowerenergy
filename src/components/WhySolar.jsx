@@ -1,0 +1,41 @@
+import "./WhySolar.css";
+import free from "../assets/free-electricity.png";
+import emi from "../assets/emi.png";
+import energy from "../assets/energy.png";
+import eco from "../assets/eco.png";
+import support from "../assets/support.png";
+import service from "../assets/service.png";
+
+const cards = [
+  { title: "Free Electricity for 25–30 Years", icon: free },
+  { title: "Pay Half Bill as EMI for 5 Years!", icon: emi },
+  { title: "Energy Independence", icon: energy },
+  { title: "Eco Friendly", icon: eco },
+  { title: "Subsidy Support", icon: support },
+  { title: "After Sales Service", icon: service },
+];
+
+
+function WhySolar() {
+  return (
+    <section className="why-solar">
+        {/* HEADING */}
+      <div className="why-heading">
+        <h2>Energy That Powers the Future</h2>
+        <p>
+          Smart, sustainable & cost-effective energy solutions for your future
+        </p>
+      </div>
+      <div className="why-container">
+        {cards.map((card, index) => (
+          <div className="solar-card" key={index}>
+            <img src={card.icon} alt={card.title} />
+            <h3>{card.title}</h3>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+export default WhySolar;

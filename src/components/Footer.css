@@ -1,0 +1,88 @@
+/* Footer main */
+.footer {
+  background-color: #0f172a; /* navy blue */
+  color: #e5e7eb;
+  margin-top: 80px;
+}
+
+/* Container */
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 40px 40px;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+/* Sections */
+.footer-section {
+  flex: 1;
+}
+
+.footer-section h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.footer-section h4 {
+  font-size: 17px;
+  margin-bottom: 15px;
+  color: #22c55e; /* green accent */
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #cbd5f5;
+}
+
+/* Brand colors */
+.blue {
+  color: #38bdf8; /* soft sky blue */
+}
+
+.green {
+  color: #22c55e;
+}
+
+.white {
+  color: #ffffff;
+}
+
+/* Links */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #cbd5f5;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li:hover {
+  color: #38bdf8;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+}

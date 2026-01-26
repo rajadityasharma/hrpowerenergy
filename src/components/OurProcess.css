@@ -1,0 +1,33 @@
+.process-section {
+  padding: 90px 20px;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.process-section h2 {
+  font-size: 34px;
+  margin-bottom: 50px;
+}
+
+.process-steps {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.process-steps span {
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.process-steps span:hover {
+  transform: translateY(-6px);
+  background: linear-gradient(135deg, #0ea5e9, #22c55e);
+  color: #ffffff;
+}
