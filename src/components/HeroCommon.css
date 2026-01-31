@@ -5,8 +5,17 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  overflow: hidden;
-  background: linear-gradient(135deg, #00c6ff, #2ecc71);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0, 200, 255, 0.616),
+      rgb(46, 204, 112)
+    ),
+    url("../assets/HR_Power_energy_slide4.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* DARK OVERLAY */

@@ -1,11 +1,9 @@
-import "./AboutHero.css";
+import "./HeroCommon.css";
 
 export default function AboutHero() {
   return (
-    <section className="about-hero">
-      <div className="about-hero-overlay"></div>
-
-      <div className="about-hero-content">
+    <section className="hero-section">
+      <div className="hero-content">
         <h1>About HR Power Energy</h1>
         <p>
           Powering homes, businesses, and industries with reliable

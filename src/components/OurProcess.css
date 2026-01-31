@@ -1,7 +1,18 @@
 .process-section {
   padding: 100px 20px;
-  background: linear-gradient(180deg, #f2fbff, #ffffff);
+  position: relative;
   overflow: hidden;
+
+  background:
+    linear-gradient(
+      rgba(255, 7, 7, 0),
+      rgba(247, 25, 25, 0)
+    ),
+    url("../assets/HR_Power_energy_slide5.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .process-heading {
@@ -61,13 +72,13 @@
 .process-icon {
   width: 90px;
   height: 90px;
-  background: linear-gradient(145deg, #00c6ff, #2ecc71);
+  background: linear-gradient(145deg, #00c8ff44, #2ecc7041);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 36px;
-  color: #fff;
+  color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   position: relative;
   z-index: 2;
@@ -82,15 +93,16 @@
   background: linear-gradient(
     120deg,
     transparent,
-    rgba(255, 255, 255, 0.5),
+    rgba(219, 219, 219, 0.253),
     transparent
   );
-  animation: shine 3s infinite;
+  animation: shine 3.5s infinite;
+  border-radius: 1rem;
 }
 
 .process-content {
   width: 40%;
-  background: #ffffff;
+  background: #ffffff3d;
   padding: 24px 26px;
   border-radius: 18px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
@@ -102,7 +114,7 @@
 }
 
 .process-content p {
-  color: #666;
+  color: #ffffff;
   font-size: 0.95rem;
 }
 
