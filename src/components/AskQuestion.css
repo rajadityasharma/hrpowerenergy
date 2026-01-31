@@ -1,0 +1,64 @@
+.ask-ai {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #ecfeff, #f0fdf4);
+  text-align: center;
+}
+
+.ask-ai h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+.ask-box {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.ask-box input {
+  flex: 1;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: 16px;
+}
+
+.ask-box button {
+  padding: 14px 24px;
+  background: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.ask-box button:hover {
+  background: #15803d;
+}
+
+.answer-card {
+  margin-top: 30px;
+  max-width: 700px;
+  margin-inline: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  animation: fadeUp 0.5s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

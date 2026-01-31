@@ -60,7 +60,7 @@ function Footer() {
           <h4>Contact Us</h4>
           <p>
             📧 <a href="mailto:hrpowerbikaner@gmail.com">
-              hrpowerenergy@gmail.com
+                hrpowerbikaner@gmail.com
             </a>
           </p>
           <p>

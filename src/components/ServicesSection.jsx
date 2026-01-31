@@ -12,7 +12,7 @@ function ServicesSection() {
 
         {/* HEADING */}
         <div className="services-header">
-          <h2>Our Services</h2>
+          {/* <h2>Our Services</h2> */}
           <p>
             Complete solar energy solutions designed for homes, businesses,
             and industries across India.

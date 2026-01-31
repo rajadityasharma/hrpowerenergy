@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import "./WhySolar.css";
 import free from "../assets/free-electricity.png";
 import emi from "../assets/emi.png";
@@ -15,17 +16,35 @@ const cards = [
   { title: "After Sales Service", icon: service },
 ];
 
-
 function WhySolar() {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (sectionRef.current) observer.observe(sectionRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="why-solar">
-        {/* HEADING */}
+    <section className="why-solar" ref={sectionRef}>
+      {/* HEADING */}
       <div className="why-heading">
         <h2>Energy That Powers the Future</h2>
         <p>
           Smart, sustainable & cost-effective energy solutions for your future
         </p>
       </div>
+
       <div className="why-container">
         {cards.map((card, index) => (
           <div className="solar-card" key={index}>

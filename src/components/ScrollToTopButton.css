@@ -1,0 +1,60 @@
+.scroll-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 25px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(145deg, #026ac0, #2ecca4);
+  color: #fff;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.25),
+    inset -4px -4px 10px rgba(255, 255, 255, 0.4);
+  transition: all 0.4s ease;
+}
+
+/* SHINE EFFECT */
+.scroll-top-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  transform: translateX(-100%);
+  animation: shine 3s infinite;
+}
+
+.scroll-top-btn.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.scroll-top-btn:hover {
+  transform: translateY(-4px) scale(1.08);
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

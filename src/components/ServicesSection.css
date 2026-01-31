@@ -1,5 +1,5 @@
 .services-section {
-  padding: 100px 20px;
+  padding: 50px 20px;
   background: linear-gradient(135deg, #fdfdfd91, #00ffb367);
 }
 
@@ -14,17 +14,19 @@
   margin-bottom: 60px;
 }
 
-.services-header h2 {
+/* .services-header h2 {
   font-size: 38px;
   font-weight: 700;
   color: #201c1c;
-}
+} */
 
 .services-header p {
   max-width: 650px;
   margin: 15px auto 0;
   color: #475569;
   line-height: 1.6;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 /* GRID */

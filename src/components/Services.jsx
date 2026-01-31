@@ -14,9 +14,9 @@ function Services() {
   return (
     <div className="page section">
       <ServicesHero />
-      <ServiceDetails />
       <ServicesSection />
-      <IndustriesWeServe />
+      <IndustriesWeServe />      
+      <ServiceDetails />
       <WhyChooseUs />
       <CustomerReviews />
       <ContactSection />

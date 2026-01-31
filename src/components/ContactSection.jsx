@@ -47,7 +47,7 @@ function ContactSection() {
 
     if (!validateForm()) return;
 
-    const whatsappNumber = "7488584509"; // 🔴 YOUR NUMBER
+    const whatsappNumber = "7878655054"; // 🔴 YOUR NUMBER
 
     const text = `Hello HR Power Energy 👋%0A
 Name: ${formData.name}%0A
@@ -104,7 +104,7 @@ Message: ${formData.message}`;
             ></textarea>
             {errors.message && <span className="error">{errors.message}</span>}
 
-            <button type="submit">Send on WhatsApp</button>
+            <button type="submit">Send Message</button>
           </form>
 
           {/* MAP */}

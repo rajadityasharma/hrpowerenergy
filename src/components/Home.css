@@ -1,7 +1,7 @@
 /* Slider wrapper */
 .slider {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -27,8 +27,8 @@
 .overlay {
   height: 100%;
   background: linear-gradient(
-    rgba(0, 0, 0, 0.55),
-    rgba(0, 0, 0, 0.55)
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0)
   );
   display: flex;
   align-items: center;
@@ -37,21 +37,22 @@
 
 /* Content */
 .content {
-  max-width: 600px;
+  /* max-width: 60px; */
   color: #ffffff;
   animation: textFade 1.2s ease;
+  text-align: center;
 }
 
 .content h1 {
-  font-size: 48px;
+  font-size: 40px;
   margin-bottom: 20px;
 }
 
-.content p {
+/* .content p {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 30px;
-}
+} */
 
 /* Buttons */
 .hero-buttons {
@@ -63,7 +64,7 @@
   padding: 12px 26px;
   background-color: #0ea5e9;
   border: none;
-  color: white;
+  color: rgb(0, 76, 241);
   font-size: 15px;
   cursor: pointer;
   border-radius: 4px;

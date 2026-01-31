@@ -1,15 +1,32 @@
-/* Navbar container */
 .navbar {
-  width: 95.5%;
+  /* max-width: 1200px;     👈 yahan se width control hogi */
+  width: 95.5%; 
+  padding: 10px 40px;
+
+  position: fixed;
+  top: 0;
+  left: 49.9%;
+  transform: translateX(-50%);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 30px;
-  background-color: #0f0f2a;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
+
+  /* border-radius: 16px; */
   z-index: 1000;
+
+  transition: background-color 0.35s ease, backdrop-filter 0.35s ease;
+}
+
+/* Home top */
+.navbar-transparent {
+  /* background: rgba(15, 23, 42, 0.2); */
+  /* backdrop-filter: blur(10px); */
+}
+
+/* After hero + other pages */
+.navbar-black {
+  background-color: #0f172a;
 }
 
 /* LOGO */
@@ -19,13 +36,14 @@
   gap: 10px;
   color: white;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .logo img {
-  height: 60px;
+  height: 70px;
   width: auto;
 }
+
 /* Desktop nav */
 .nav-links {
   list-style: none;
